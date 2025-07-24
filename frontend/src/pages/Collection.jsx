@@ -57,7 +57,7 @@ const Collection = () => {
 
   useEffect(() => {
     applyFilter();
-  }, [category, subCategory, priceRange,search,showSearch]);
+  }, [category, subCategory, priceRange,search,showSearch, products]);
 
   useEffect(() => {
     sortProduct();
