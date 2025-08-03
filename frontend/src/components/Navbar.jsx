@@ -19,11 +19,11 @@ const Navbar = () => {
 
   return (
     <div className='flex items-center justify-between py-5 font-medium'>
-      <Link to='/'><img
-        src={assets.logo}
-        alt="Logo"
-        className='w-36 transition-all duration-500 ease-in-out hover:scale-95 hover:opacity-90 hover:rotate-[-1deg]'
-      /></Link>
+      <Link to='/'>
+        <h1 className='text-3xl font-bold text-black transition-all duration-500 ease-in-out hover:scale-95 hover:opacity-90 hover:rotate-[-1deg]'>
+          Buy<span className='text-blue-500'>Buddies</span>
+        </h1>
+      </Link>
 
       {/* Desktop Menu */}
       <ul className='hidden sm:flex gap-5 text-sm'>
@@ -50,14 +50,14 @@ const Navbar = () => {
           <img onClick={() => token ? null : navigate('/login')} src={assets.profile_icon} className='w-5 cursor-pointer' alt="Profile" />
           {/* Drop down Menu  */}
 
-          {token && 
-          <div className='group-hover:block hidden absolute right-0 pt-4 z-10'>
-            <div className='flex flex-col gap-2 w-36 py-3 px-5 bg-slate-100 text-gray-500 rounded'>
-              <p className='cursor-pointer hover:text-black'>My Profile</p>
-              <p onClick={()=> navigate('/orders')} className='cursor-pointer hover:text-black'>Orders</p>
-              <p onClick={logout} className='cursor-pointer hover:text-black'>Logout</p>
-            </div>
-          </div>}
+          {token &&
+            <div className='group-hover:block hidden absolute right-0 pt-4 z-10'>
+              <div className='flex flex-col gap-2 w-36 py-3 px-5 bg-slate-100 text-gray-500 rounded'>
+                <p className='cursor-pointer hover:text-black'>My Profile</p>
+                <p onClick={() => navigate('/orders')} className='cursor-pointer hover:text-black'>Orders</p>
+                <p onClick={logout} className='cursor-pointer hover:text-black'>Logout</p>
+              </div>
+            </div>}
 
         </div>
 

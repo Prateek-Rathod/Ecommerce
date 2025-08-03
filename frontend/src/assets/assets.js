@@ -71,7 +71,7 @@ import p_img67 from './p_img67.jpeg';
 import p_img68 from './p_img68.jpeg';
 
 
-import logo from './logo.png'
+
 import hero_img from './hero_img.png'
 import cart_icon from './cart_icon.png'
 import bin_icon from './bin_icon.png'
@@ -96,7 +96,6 @@ import Instagram_icon from './Instagram_icon.png'
 import twitter_icon from './twitter_icon.png'
 import facebook_icon from './facebook_icon.png'
 export const assets = {
-    logo,
     hero_img,
     cart_icon,
     dropdown_icon,
